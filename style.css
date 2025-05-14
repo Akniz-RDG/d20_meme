@@ -1,0 +1,51 @@
+body {
+  background: black;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  padding-top: 10vh;
+}
+
+#resultado {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  color: gold;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: #222;
+  color: white;
+  border: 2px solid gold;
+  border-radius: 10px;
+}
+
+#pantalla-evento {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+#pantalla-evento.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#pantalla-evento img {
+  max-width: 90vw;
+  max-height: 90vh;
+}
